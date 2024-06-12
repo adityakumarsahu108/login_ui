@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:login_ui/widgets/gradient_button.dart';
+import 'package:login_ui/widgets/login_field.dart';
 import 'package:login_ui/widgets/social_button.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -31,6 +33,27 @@ class LoginScreen extends StatelessWidget {
                 label: 'Continue with FaceBook',
                 horizontalPadding: 90,
               ),
+              const SizedBox(
+                height: 15,
+              ),
+              const Text(
+                'or',
+                style: TextStyle(
+                  fontSize: 17,
+                ),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              const LoginField(hintText: 'Email'),
+              const SizedBox(
+                height: 15,
+              ),
+              const LoginField(hintText: 'Password'),
+              const SizedBox(
+                height: 20,
+              ),
+              const GradientButton(),
             ],
           ),
         ),
